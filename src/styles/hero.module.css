@@ -1,5 +1,23 @@
+.hero_container {
+	background-image: url("../../public/imgs/arman.gif");
+	background-size: cover;
+
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
 .hero_gif {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	transform: rotate(120deg);
+}
+
+.hero_link {
+	padding: 1.5em;
+	border-radius: 2px;
+	border: 1px solid white;
+	text-decoration: none;
+	position: relative;
 }

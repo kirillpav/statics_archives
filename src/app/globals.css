@@ -2,26 +2,3 @@
 	background-color: black;
 	color: #ededed;
 }
-
-a {
-	position: relative;
-	display: inline-block;
-	font-size: 1.5em;
-	font-weight: 800;
-	color: #ededed;
-	overflow: hidden;
-
-	background: linear-gradient(to right, #d83030, #d83030 50%, #ededed 50%);
-
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-size: 200% 100%;
-	background-position: 100%;
-
-	transition: background-position 275ms ease;
-}
-
-a:hover {
-	background-position: 0 100%;
-}

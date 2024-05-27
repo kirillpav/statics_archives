@@ -20,9 +20,13 @@ export default function RootLayout({
 		<html lang="en" className={myFont.className}>
 			<body>
 				<nav className={styles.navbar}>
-					<a href="/">Home</a>
-					<Image src="/imgs/logo.webp" alt="logo" width={300} height={300} />
-					<a href="/">Showcase</a>
+					<a href="/" className={styles.navbar_link}>
+						Home
+					</a>
+					<Image src="/imgs/logo.webp" alt="logo" width={250} height={250} />
+					<a href="/" className={styles.navbar_link}>
+						Showcase
+					</a>
 				</nav>
 				{children}
 				<footer></footer>

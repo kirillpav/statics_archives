@@ -3,40 +3,37 @@
 import Image from "next/image";
 import { useRef } from "react";
 import styles from "../styles/hero.module.css";
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import Draggable from "gsap/Draggable";
 
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP, Draggable);
 
 export default function Home() {
 	const imgRef = useRef(null);
 
-	useGSAP(() => {
-		gsap.to(imgRef.current, {
-			duration: 1.5,
-			y: -20,
-			repeat: -1,
-			yoyo: true,
-			ease: "sine.inOut",
-			scrollTrigger: {
-				trigger: "#herosection",
-				start: "top bottom",
-				toggleActions: "play pause play pause",
-			},
-		});
-	});
+	// useGSAP(() => {
+	// 	Draggable.create(imgRef.current, {
+	// 		type: "rotation",
+	// 		inertia: true,
+	// 	});
+	// });
 
 	return (
 		<>
-			<Image
-				src="/imgs/arman.gif"
-				alt="keybaord gif"
-				height={500}
-				width={500}
-				className={styles.hero_gif}
-				ref={imgRef}
-			/>
+			<div className={styles.hero_container}>
+				{/* <Image
+					src="/imgs/arman.gif"
+					alt="keybaord gif"
+					height={650}
+					width={650}
+					className={styles.hero_gif}
+					ref={imgRef}
+				/> */}
+				<a href="#" className={styles.hero_link}>
+					View Designs
+				</a>
+			</div>
 		</>
 	);
 }
