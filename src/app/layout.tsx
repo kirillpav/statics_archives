@@ -24,7 +24,7 @@ export default function RootLayout({
 						Home
 					</a>
 					<Image src="/imgs/logo.webp" alt="logo" width={250} height={250} />
-					<a href="/" className={styles.navbar_link}>
+					<a href="/showcase" className={styles.navbar_link}>
 						Showcase
 					</a>
 				</nav>
