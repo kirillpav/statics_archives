@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Image from "next/image";
 import "./globals.css";
-import styles from "../styles/navbar.module.css";
+import styles from "../styles/main.module.css";
+import { IconBrandInstagram, IconBrandDiscord } from "@tabler/icons-react";
 
 const myFont = localFont({ src: "../../public/fonts/FleuronRegular.otf" });
 
@@ -29,7 +30,10 @@ export default function RootLayout({
 					</a>
 				</nav>
 				{children}
-				<footer></footer>
+				<footer className={styles.footer}>
+					<IconBrandInstagram stroke={2} />
+					<IconBrandDiscord stroke={2} />
+				</footer>
 			</body>
 		</html>
 	);
