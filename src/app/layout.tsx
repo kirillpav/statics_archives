@@ -31,8 +31,24 @@ export default function RootLayout({
 				</nav>
 				{children}
 				<footer className={styles.footer}>
-					<IconBrandInstagram stroke={2} />
-					<IconBrandDiscord stroke={2} />
+					<a href="#" className={styles.footer_link}>
+						<IconBrandInstagram
+							stroke={2}
+							className={styles.footer_link_icon}
+						/>
+					</a>
+					<a href="#" className={styles.footer_link}>
+						<IconBrandDiscord stroke={2} />
+					</a>
+					<a href="#" className={styles.footer_link}>
+						RAFFLE
+					</a>
+					<a href="#" className={styles.footer_link}>
+						PRIVACY
+					</a>
+					<a href="#" className={styles.footer_link}>
+						TERMS & CONDITIONS
+					</a>
 				</footer>
 			</body>
 		</html>

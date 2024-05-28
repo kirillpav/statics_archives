@@ -10,26 +10,16 @@ import Draggable from "gsap/Draggable";
 gsap.registerPlugin(useGSAP, Draggable);
 
 export default function Home() {
-	const imgRef = useRef(null);
-
-	// useGSAP(() => {
-	// 	Draggable.create(imgRef.current, {
-	// 		type: "rotation",
-	// 		inertia: true,
-	// 	});
-	// });
-
 	return (
 		<>
 			<div className={styles.hero_container}>
-				{/* <Image
-					src="/imgs/arman.gif"
+				<Image
+					src="/imgs/hero-gif-cropped-rotated.gif"
 					alt="keybaord gif"
-					height={650}
-					width={650}
+					height={315}
+					width={800}
 					className={styles.hero_gif}
-					ref={imgRef}
-				/> */}
+				/>
 				<a href="#" className={styles.hero_link}>
 					View Designs
 				</a>

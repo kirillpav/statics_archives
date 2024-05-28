@@ -2,3 +2,12 @@
 	background-color: black;
 	color: #ededed;
 }
+
+body {
+	position: relative;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
