@@ -6,6 +6,7 @@
 	justify-content: space-around;
 	margin: 0 auto;
 	padding: 5em;
+	row-gap: 5em;
 }
 
 .showcase__select {
@@ -14,6 +15,7 @@
 	margin: 0 auto;
 	font-size: 1.2em;
 	font-family: inherit;
+	outline: none;
 }
 
 .showcase__title {
