@@ -9,18 +9,19 @@ import alpine from "../../public/imgs/88.1_alpine.png";
 export default function EightyCollection(): ReturnType<React.FC> {
 	return (
 		<>
-			<h3>88.1 COLLECTION</h3>
-			<div className={styles.showcase__item}>
-				<Image src={alpine} alt="first keyboard" height={400} width={300} />
-				<span>88.1 alpine</span>
-			</div>
-			<div className={styles.showcase__item}>
-				<Image src={lilac} alt="first keyboard" height={400} width={300} />
-				<span>88.1 lilac</span>
-			</div>
-			<div className={styles.showcase__item}>
-				<Image src={sierra} alt="first keyboard" height={400} width={300} />
-				<span>88.1 sierra</span>
+			<div className={styles.showcase__container}>
+				<div className={styles.showcase__item}>
+					<Image src={alpine} alt="first keyboard" height={400} width={300} />
+					<span>88.1 alpine</span>
+				</div>
+				<div className={styles.showcase__item}>
+					<Image src={lilac} alt="first keyboard" height={400} width={300} />
+					<span>88.1 lilac</span>
+				</div>
+				<div className={styles.showcase__item}>
+					<Image src={sierra} alt="first keyboard" height={400} width={300} />
+					<span>88.1 sierra</span>
+				</div>
 			</div>
 		</>
 	);

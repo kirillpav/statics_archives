@@ -20,7 +20,7 @@ export default function Home() {
 					width={800}
 					className={styles.hero_gif}
 				/>
-				<a href="#" className={styles.hero_link}>
+				<a href="/showcase" className={styles.hero_link}>
 					View Designs
 				</a>
 			</div>

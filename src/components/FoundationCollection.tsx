@@ -8,24 +8,25 @@ import foundationNavy from "../../public/imgs/foundation_navy.png";
 export default function FoundationCollection(): ReturnType<React.FC> {
 	return (
 		<>
-			<h3>FOUNDATION COLLECTION</h3>
-			<div className={styles.showcase__item}>
-				<Image
-					src={foundationNavy}
-					alt="first keyboard"
-					height={400}
-					width={300}
-				/>
-				<span>foundaction navy</span>
-			</div>
-			<div className={styles.showcase__item}>
-				<Image
-					src={foundationVeryPeri}
-					alt="first keyboard"
-					height={400}
-					width={300}
-				/>
-				<span>foundaction veryperi</span>
+			<div className={styles.showcase__container}>
+				<div className={styles.showcase__item}>
+					<Image
+						src={foundationNavy}
+						alt="first keyboard"
+						height={400}
+						width={300}
+					/>
+					<span>foundaction navy</span>
+				</div>
+				<div className={styles.showcase__item}>
+					<Image
+						src={foundationVeryPeri}
+						alt="first keyboard"
+						height={400}
+						width={300}
+					/>
+					<span>foundaction veryperi</span>
+				</div>
 			</div>
 		</>
 	);

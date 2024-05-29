@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@nextui-org/react": "^2.4.0",
     "@nextui-org/select": "^2.2.0",
     "@tabler/icons-react": "^3.5.0",
     "gsap": "^3.12.5",

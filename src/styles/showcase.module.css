@@ -3,13 +3,35 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	margin: 0 auto;
-	height: 100vh;
+	padding: 5em;
+}
+
+.showcase__select {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.2em;
+	font-family: inherit;
+}
+
+.showcase__title {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 1em;
 }
 
 .showcase__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border-bottom: 1px solid transparent;
+	transition: transform 0.3s, border-bottom-color 0.3s, border-bottom-width 0.3s;
+	padding: 0.5em;
+}
+
+.showcase__item:hover {
+	transform: scale(1.1);
+	border-bottom-color: #55f0c2;
 }
