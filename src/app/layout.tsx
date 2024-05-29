@@ -22,11 +22,16 @@ export default function RootLayout({
 			<body>
 				<nav className={styles.navbar}>
 					<a href="/" className={styles.navbar_link}>
-						Home
+						HOME
 					</a>
-					<Image src="/imgs/logo.webp" alt="logo" width={250} height={250} />
+					<Image
+						src="/imgs/static_logo.gif"
+						alt="logo"
+						width={250}
+						height={250}
+					/>
 					<a href="/showcase" className={styles.navbar_link}>
-						Showcase
+						ARCHIVE
 					</a>
 				</nav>
 				{children}
@@ -42,6 +47,9 @@ export default function RootLayout({
 					</a>
 					<a href="#" className={styles.footer_link}>
 						RAFFLE
+					</a>
+					<a href="#" className={styles.footer_link}>
+						CONTACT
 					</a>
 					<a href="#" className={styles.footer_link}>
 						PRIVACY
