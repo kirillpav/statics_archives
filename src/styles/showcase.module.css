@@ -37,3 +37,9 @@
 	transform: scale(1.1);
 	border-bottom-color: #55f0c2;
 }
+
+@media screen and (max-width: 425px) {
+	.showcase__img {
+		width: 100%;
+	}
+}

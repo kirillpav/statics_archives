@@ -38,6 +38,7 @@ export default function showcase(): ReturnType<React.FC> {
 						alt="placeholder"
 						width={500}
 						height={500}
+						className={styles.showcase__img}
 					></Image>
 				);
 		}
