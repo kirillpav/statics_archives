@@ -1,13 +1,8 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
-import styles from "../styles/hero.module.css";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import Draggable from "gsap/Draggable";
 
-gsap.registerPlugin(useGSAP, Draggable);
+import styles from "../styles/hero.module.css";
 
 export default function Home() {
 	return (
