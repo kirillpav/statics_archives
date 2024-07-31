@@ -10,7 +10,7 @@ import FoundationCollection from "@/components/FoundationCollection";
 import HeartbrakeCollection from "@/components/HeartbrakeColection";
 
 export default function showcase(): ReturnType<React.FC> {
-	const [selectedCollection, setSelectedCollection] = useState("");
+	const [selectedCollection, setSelectedCollection] = useState<string>("");
 
 	const handleChange = (e) => {
 		setSelectedCollection(e.target.value);
